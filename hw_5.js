@@ -19,7 +19,7 @@ class Electrodevices {
 
 class Lamp extends Electrodevices {
     constructor(name, amperage, luminous, voltage, deviceTurned) {
-        super(voltage);
+        super(voltage, deviceTurned);
         super(deviceTurned);
         this.name = name;
         this.luminous = luminous;
@@ -40,8 +40,7 @@ class Lamp extends Electrodevices {
 
 class Computing extends Electrodevices {
     constructor(name, amperage, size, voltage, deviceTurned) {
-        super(voltage);
-        super(deviceTurned);
+        super(voltage, deviceTurned);
         this.name = name;
         this.size = size + " Дюймов";
         this.amperage = amperage;
