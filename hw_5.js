@@ -20,7 +20,6 @@ class Electrodevices {
 class Lamp extends Electrodevices {
     constructor(name, amperage, luminous, voltage, deviceTurned) {
         super(voltage, deviceTurned);
-        super(deviceTurned);
         this.name = name;
         this.luminous = luminous;
         this.amperage = amperage;
